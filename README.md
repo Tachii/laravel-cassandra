@@ -33,7 +33,7 @@ composer require sonvq/cassandra
 
  Laravel  | Package
 :---------|:----------
- 5.2.x    | 1.0.x
+ 5.x    | 1.0.x
 
 
 Add Cassandra service provider in `config/app.php`:

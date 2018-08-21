@@ -26,8 +26,12 @@
   },
   "autoload": {
     "psr-0": {
-      "sonvq\\Cassandra": "src/",
-      "sonvq\\Eloquent": "src/"
+      "tachii\\Cassandra": "src/",
+      "tachii\\Eloquent": "src/"
+    },
+    "psr-4": {
+      "tachii\\Cassandra\\": "src/",
+      "tachii\\Eloquent\\": "src/"
     }
   },
   "autoload-dev": {
@@ -36,5 +40,12 @@
       "tests/models",
       "tests/seeds"
     ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "tachii\\Cassandra\\CassandraServiceProvider"
+      ]
+    }
   }
 }
